@@ -1,0 +1,80 @@
+/* YOUR CUSTOM STYLES */
+.ghe_trong {
+  width: 30px;
+  height: auto;
+  background-color: pink;
+  padding: 5px;
+  margin: 5px;
+}
+
+.ghe_chon {
+  width: 30px;
+  height: auto;
+  background-color: yellow;
+  padding: 5px;
+  margin: 5px;
+}
+
+.ghe_vua_chon {
+  width: 30px;
+  height: auto;
+  background-color: red;
+  padding: 5px;
+  margin: 5px;
+}
+
+
+.ghex {
+  width: 200px;
+  background: violet;
+}
+
+
+.input_search {
+  width: 50%;
+  height: 50%;
+}
+
+.input_search:hover {
+  width: 50%;
+  height: 50%;
+  background-color: pink;
+  border-radius: 7px;
+}
+
+.buttonbe {
+  width: 80px;
+  height: 30px;
+  background-color: plum;
+  border-radius: 5px;
+}
+
+.font-text {
+  width: 300px;
+}
+
+.Phimhot {
+  position: fixed;
+  float: left;
+  width: 180px;
+  background-color: orange;
+  margin-top: 140px;
+}
+
+.bg-body {
+  background-color: pink;
+}
+
+.dat-phim {
+  width: 150px;
+  height: 50px;
+}
+
+.drop-dow {
+  cursor: pointer;
+}
+
+.drop-dow:hover {
+  background-color: orange;
+}
+
