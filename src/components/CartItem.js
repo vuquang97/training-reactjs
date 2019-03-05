@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import * as message from '../constans/Message';
-import note from '../image/note.JPG';
 
 class CartItem extends Component {
     constructor(props) {
@@ -47,7 +46,6 @@ class CartItem extends Component {
                         +
                     </label>
                 </div><br />
-                <img src={ note } alt="" className="img-fluid z-depth-0" />
             </th>
             <th>{ this.showSubTotal(item.product.price, item.quantity) }$ </th>
             <th>

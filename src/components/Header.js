@@ -80,11 +80,11 @@ class header extends Component {
                                 aria-expanded="false">
                                 <i className="fa fa-user"></i> {userName ? userName[0].txtUsername : 'Tài khoản'}</div>
                             <div className="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                {userName ? userName[1] !== 0 ? <Link to="/dangky"><div className="dropdown-item waves-effect waves-light">Đăng Ký</div></Link> : '' : ''}
-                                {userName ? '' : <Link to="/dangnhap"><div className="dropdown-item waves-effect waves-light">Đăng nhập</div></Link>}
-                                {userName ? <Link to="/dangnhap"><div className="dropdown-item waves-effect waves-light" onClick={() => this.onDangXuat()}>Đăng Xuất</div></Link> : ''}
-                                {userName ? userName[1] !== 0 ? <Link to="/naptien"><div className="dropdown-item waves-effect waves-light" onClick={() => this.onNapTien()}>Nạp tiền</div></Link> : '' : ''}
-                                {userName ? userName[1] !== 0 ? <Link to="/thongtinuser"><div className="dropdown-item waves-effect waves-light" onClick={() => this.onNapTien()}>Thông tin</div></Link> : '' : ''}
+                              <div className="dropdown-item waves-effect waves-light">Đăng Ký</div>
+                               <div className="dropdown-item waves-effect waves-light">Đăng nhập</div>
+                               <div className="dropdown-item waves-effect waves-light" >Đăng Xuất</div>
+                        <div className="dropdown-item waves-effect waves-light" onClick={() => this.onNapTien()}>Nạp tiền</div>
+                                <div className="dropdown-item waves-effect waves-light" onClick={() => this.onNapTien()}>Thông tin</div>
                             </div>
                         </li>
                     </ul>
@@ -101,14 +101,6 @@ class header extends Component {
         });
     }
 
-    onDangXuat = () => {
-        localStorage.setItem('LOGIN', null);
-        //    onChangeMessage(message.MSG_DANG_XUAT);
-    }
-
-    onNapTien = () => {
-        localStorage.setItem('CHECKNAPTIEN', 0);
-    }
 }
 
 export default header;

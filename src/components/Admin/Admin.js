@@ -188,15 +188,7 @@ class Admin extends Component {
       });
     }
 
-    var userName =  JSON.parse(localStorage.getItem('LOGIN'));
 
-    if(userName) {
-      if(userName[1] !== 0 ) {
-        return <Redirect to='/' />
-      }
-    }else {
-      return <Redirect to='/' />
-    }
     return (
       <div className="container">
         <Link to='/'><button type="button" className="btn btn-warning"><i className="fas fa-home"></i>&nbsp;Home</button></Link>
@@ -215,9 +207,7 @@ class Admin extends Component {
               <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
               <TaskControl keyWord={ this.keyWord } onSort={ this.onSort } sortBy={ sortBy } sortValue={ sortValue }/>
               </div>
-              <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <Link to='/user'><div className="btn btn-primary"><i className="fas fa-users"></i>&nbsp;&nbsp;USER</div></Link>
-              </div>
+              
             </div>
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
